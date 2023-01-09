@@ -1,0 +1,93 @@
+$myColorOrange: #f89d13;
+$myColorGray: #343a40;
+
+body {
+  background-color: white;
+  margin: 0px;
+}
+.bg-img {
+  background-image: url(../imgs/ship.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 0px;
+  text-align: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  button {
+    margin-top: 50px;
+    background-color: $myColorOrange;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    letter-spacing: 0.1rem;
+  }
+}
+.container {
+  background-color: $myColorOrange;
+  text-align: center;
+
+  #quote {
+    background-color: $myColorGray;
+  }
+
+  .container-card {
+    padding: 5px;
+    color: white;
+    .container-card-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    form {
+      text-align: left;
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: $myColorGray;
+        color: white;
+        border: 1px solid white;
+        margin: 10px 0px;
+      }
+      #btn {
+        background-color: $myColorOrange;
+        font-weight: bold;
+        border: none;
+        padding: 10px 70px;
+        margin-top: 25px;
+      }
+    }
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img {
+    padding: 200px 0px;
+    color: white;
+
+    h1 {
+      width: 50%;
+      margin: auto;
+    }
+  }
+
+  .container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: -75px;
+
+    .container-card {
+      width: 100%;
+      padding: 50px;
+    }
+  }
+}

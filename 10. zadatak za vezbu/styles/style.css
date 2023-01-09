@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 5px;
+}
+
+.header-image {
+  display: inline-block;
+  width: 50px;
+  padding: 10px;
+  border-right: 2px solid #b6b6b6;
+}
+.header-image img {
+  width: 100%;
+}
+
+.header-text {
+  display: inline-block;
+  padding: 10px;
+}
+.header-text p {
+  font-size: 12px;
+}
+
+.container .container-item {
+  margin: 30px;
+  text-align: center;
+  color: #9a9a9a;
+  border: 2px solid #f2f2f2;
+}
+.container .container-item .container-item-plan {
+  padding: 30px;
+}
+.container .container-item .container-item-plan p {
+  font-size: 20px;
+}
+.container .container-item .container-item-plan p:last-child {
+  font-size: 11px;
+}
+.container .container-item .container-item-price {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  font-size: 40px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container .container-item .container-item-price p sup,
+.container .container-item .container-item-price p sub {
+  font-size: 20px;
+}
+.container .container-item .container-item-price .container-item-price-spike {
+  position: absolute;
+  border-top: 20px solid #f2f2f2;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  bottom: -15%;
+}
+.container .container-item .container-item-stats {
+  padding-top: 40px;
+}
+.container .container-item .container-item-stats .container-item-stats-text {
+  padding: 15px;
+  border-bottom: 2px solid #f2f2f2;
+}
+.container .container-item .container-item-stats .container-item-stats-text:last-child {
+  border: none;
+}
+.container .container-item button {
+  position: relative;
+  bottom: -20px;
+  background-color: white;
+  color: #9a9a9a;
+  padding: 10px 20px;
+  border: 2px solid #ee3c25;
+  border-radius: 20px;
+}
+.container #selected .container-item-plan {
+  color: black;
+}
+.container #selected .container-item-price {
+  background-color: #ee3c25 !important;
+  color: white;
+}
+.container #selected .container-item-price .container-item-price-spike {
+  border-top: 20px solid #ee3c25;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+  .container {
+    display: flex;
+    gap: 30px;
+  }
+  .container .container-item {
+    width: 100%;
+    margin: 30px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

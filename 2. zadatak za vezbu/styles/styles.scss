@@ -1,0 +1,105 @@
+$myColor: rgb(79, 212, 135);
+
+body {
+  margin: 0;
+  background-color: aliceblue;
+}
+
+.container-card {
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  .container-card-text_container {
+    background-color: white;
+    padding: 10px;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    .container-card-info_container {
+      font-size: 13px;
+      color: gray;
+
+      img {
+        height: 15px;
+        width: 15px;
+      }
+
+      p {
+        display: inline-block;
+      }
+    }
+
+    a {
+      color: $myColor;
+      padding-bottom: 5px;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: $myColor;
+      color: white;
+      font-weight: bolder;
+      border: none;
+      border-radius: 2px;
+      margin-bottom: 20px;
+
+      &:hover {
+        opacity: 0.75;
+      }
+
+      &:active {
+        opacity: 0.25;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 75px;
+  text-align: center;
+
+  p {
+    color: $myColor;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .container-card {
+    width: 100%;
+
+    .container-card-text_container {
+      position: relative;
+      width: 85%;
+      margin-left: auto;
+      margin-top: -50px;
+    }
+  }
+
+  footer {
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

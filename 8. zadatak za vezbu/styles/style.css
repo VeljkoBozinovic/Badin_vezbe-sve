@@ -1,0 +1,112 @@
+body {
+  background-color: #f6f7fd;
+}
+
+header {
+  text-align: center;
+  color: #0e1b4d;
+}
+header p {
+  color: #565f83;
+  margin: 10px;
+}
+header .decoration {
+  height: 5px;
+  width: 50px;
+  margin: auto;
+  background-color: #f82249;
+}
+
+section {
+  margin: 25px;
+  text-align: center;
+}
+section .nav {
+  width: 65%;
+  margin: auto;
+}
+section .nav .nav-item {
+  font-weight: bold;
+  color: white;
+  padding: 5px 35px;
+  background-color: #0e1b4d;
+  margin: 5px;
+  border-radius: 15px;
+}
+section .nav #nav-item-selected {
+  background-color: #f82249;
+}
+section p {
+  margin: 30px;
+  color: #565f83;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .container-item {
+  border-bottom: 1px solid #565f83;
+  display: flex;
+}
+.container .container-item .container-item-time {
+  color: #565f83;
+  margin: 10px;
+  width: 20%;
+}
+.container .container-item .container-item-info {
+  display: flex;
+  width: 80%;
+}
+.container .container-item .container-item-info img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.container .container-item .container-item-info .container-item-info-text {
+  padding: 10px;
+}
+.container .container-item .container-item-info .container-item-info-text h4 {
+  margin: 5px 0px;
+}
+.container .container-item .container-item-info .container-item-info-text h4 span {
+  font-weight: lighter;
+  font-style: italic;
+  color: #565f83;
+}
+.container .container-item .container-item-info .container-item-info-text p {
+  color: #565f83;
+  margin: 0px;
+}
+.container #container-item-last {
+  border: none;
+}
+
+.toTop {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+.toTop img {
+  width: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 60%;
+    margin: auto;
+  }
+  section .nav {
+    display: flex;
+  }
+  section .nav .nav-item {
+    width: 100%;
+  }
+  .container-item-time {
+    width: 10% !important;
+  }
+  .container-item-info {
+    width: 90% !important;
+  }
+}/*# sourceMappingURL=style.css.map */

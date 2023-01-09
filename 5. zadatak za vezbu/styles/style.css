@@ -1,0 +1,124 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px gray;
+  padding: 20px;
+}
+.container #info .container-column-info-items .container-column-info-items-img img {
+  height: 100%;
+  width: 100%;
+}
+.container #info .container-column-info-items .container-column-info-items-p {
+  text-align: center;
+  padding: 20px;
+}
+.container #info .container-column-info-items .container-column-info-items-p p {
+  color: gray;
+}
+.container #info .container-column-info-items .container-column-info-items-p span {
+  color: black;
+  font-weight: bold;
+}
+.container #info .container-column-info-skills p {
+  font-weight: bold;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar p {
+  display: inline-block;
+  color: gray;
+  font-weight: lighter;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar #left {
+  float: right;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarHTML {
+  background-color: #cde1f8;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarHTML .progressionHTML {
+  height: 10px;
+  width: 85%;
+  background-color: #0078ff;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarCSS {
+  background-color: #cde1f8;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarCSS .progressionCSS {
+  height: 10px;
+  width: 75%;
+  background-color: #0078ff;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarPHP {
+  background-color: #cde1f8;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarPHP .progressionPHP {
+  height: 10px;
+  width: 50%;
+  background-color: #0078ff;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarJS {
+  background-color: #cde1f8;
+}
+.container #info .container-column-info-skills .container-column-info-skills-ProgressBar .progressBarJS .progressionJS {
+  height: 10px;
+  width: 90%;
+  background-color: #0078ff;
+}
+.container #aboutMe h1 {
+  margin-bottom: 55px;
+}
+.container #aboutMe h1 span {
+  border-bottom: 2px solid #0078ff;
+}
+.container #aboutMe p {
+  color: gray;
+  text-align: center;
+}
+
+#backToTop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+#backToTop img {
+  width: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 65%;
+    margin: 50px auto;
+    display: flex;
+  }
+  .container .container-column {
+    width: 100%;
+    margin: 20px;
+  }
+  .container #info .container-column-info-items {
+    display: flex;
+  }
+  .container #info .container-column-info-items .container-column-info-items-img {
+    width: 100%;
+    max-width: 200px;
+  }
+  .container #info .container-column-info-items .container-column-info-items-img img {
+    text-align: center;
+    width: 100%;
+    min-width: 75px;
+    aspect-ratio: 1/1;
+  }
+  .container #info .container-column-info-items .container-column-info-items-p {
+    padding: 0px 30px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container #info .container-column-info-items .container-column-info-items-p p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
